@@ -1,25 +1,22 @@
-fx_version 'adamant'
+fx_version 'cerulean'
 game 'gta5'
+
 name 'Mythic Framework Notification System'
 author 'Alzar - https://github.com/Alzar'
 version 'v1.1.0'
 
-ui_page {
-    'html/ui.html',
-}
+client_script 'client.lua'
+
+ui_page 'html/index.html'
 
 files {
-	'html/ui.html',
-	'html/js/app.js', 
-	'html/css/style.css',
-}
-
-client_scripts {
-	'client/main.lua',
+	'html/index.html',
+	'html/script.js', 
+	'html/style.css',
 }
 
 exports {
 	'SendAlert',
 	'SendUniqueAlert',
-	'PersistentAlert',
+	'PersistentAlert'
 }
